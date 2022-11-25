@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #d9dcd6;
+}
+ /* changed from .header to header as there is only one header */
+header {
+    display: flex;
+    /*justify content aligns flexible items, space-between pushes them to the rigth and left*/
+    justify-content: space-between;
+    /*aligns items to the center of the header (container)*/
+    align-items: center;
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+/* Isolate h1 element of the header */
+/* Used inline-block as it allows to set the width and height of an element */
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+header h1 .seo {
+    color: #d9dcd6;
+}
+
+/* Used nav class to edit navigation bar */
+nav{
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+/* created nav links class to classify them further. List style none to remove the bullet points*/
+.nav_links {
+    list-style: none;
+}
+/* Inline block to match h1 so that header and nav bar are on the same line */
+.nav_links li {
+    display: inline-block;
+    padding: 25px;
+}
+/* No text decoration as wanting it to be represented as plain text */
+.nav_links li a {
+    color:#ffffff;
+    text-decoration:none;
+}
+/*initially unable to changed hyperlink text colour as written colour instead of color- realised functions have to written using US eng*/
+
+p {
+    font-size: 16px; 
+    padding: 2px 6px;
+}
+
+/* Link of the image wanting to be represented as background*/
+/* Cover to allow the image to cover the whole container */
+.main_image {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.float-left{
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/*used class to be able to group the 3 blue boxes together of context*/
+/* originally used section id but realised I had to use class in order to group the areas together including the p element of the content*/
+.content .main_section {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+/*grouped content images together*/
+.content .main_section img{
+    max-height: 200px;
+}
+/*grouped headings together*/
+.content .main_section h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.benefits {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+
+/*grouped the aside bar elements together in a class so style can be applied to all as they have the same children*/
+.benefits_side_bar{
+    margin-bottom: 60px;
+    color: #ffffff;
+}
+
+/* To isolate the h3 element */
+.benefits_side_bar h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+/* To isolate images in the benefits class */
+.benefits_side_bar img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+/*changed visibility to none to hide the text */
+/*changed from .footer to footer as it is not in a class to need .*/ 
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    visibility: hidden;
+}
+
+footer h2 {
+    font-size: 20px;
+}
